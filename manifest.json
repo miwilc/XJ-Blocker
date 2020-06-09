@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "options_page": "options.html",
+    "name": "XJ-Blocker",
+    "version": "0.1.0",
+    "icons": { "16": "images/xj_logo16.png",
+      "48": "images/xj_logo48.png",
+     "128": "images/xj_logo128.png" },
+
+    "description": "Plugin for blocking certain content on the XJ-page",
+    "permissions": ["storage"],
+    "content_scripts": [{
+      "js": ["content.js"],
+      "matches": ["https://xtreme-jumps.eu/*"]
+    }]
+   
+  }
